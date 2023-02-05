@@ -1,0 +1,26 @@
+<form action="/add_product" method="POST">
+  <fieldset>
+      Tuotteen nimi:
+      <input type="text" name="name">
+      <p>
+      Tuotteen hinta:
+      <input type="text" name="price">
+      <p>
+      <p>
+      Kaloreiden määrä:
+      <input type="text" name="calories">
+      <p>
+      Oliko kyseessä heräteostos?
+      <div>
+          <input type="checkbox" id="Kyllä" name="type" checked>
+          <label for="kyllä">Kyllä</label>
+      </div>
+
+      <div>
+          <input type="checkbox" id="ei" name="type">
+          <label for="ei">Ei</label>
+      </div>
+   <br>
+      <input type="submit" value="Lisää">
+      </form>
+  </fieldset>
