@@ -1,20 +1,23 @@
-# Tsoha-2022
-Tietokantojen harjoitustyö 2022
+# Tsoha-2023
+Tietokantojen harjoitustyö 2023
 
-Sovelluksen avulla voi laskea makrojen kokonaismäärän keräämällä erilaisia ravintoaineita annokseen. Sovellus laskee ehkä myös annoksen ravintoarvot, kaloritiheyden, yleisen imeytyvyyden käyttämällä yleistä glykeemista indeksiä.
+Sovellukseen voi lisätä kuitteja eri ruokakauopoista ja seurata ostokäyttäytymistään.
 
 Sovelluksen ominaisuuksia ovat:
 
-- Käyttäjä voi luoda uuden tunnuksen ja lisää sinne omia tietoja kuten pituutta, painoa, kehotyyppiä yms.
+- Käyttäjä voi luoda uuden tunnuksen ja lisää kuitteja.
 
-- Kirjautuessa näkee viimeisimmät ja yleisimmät haut.
+- Kirjautuessa näkee tallennetut kuitit ja siinä näkyy myös oleellisia speksejä mm. kokonaishinta, kalorimäärä yms.
 
 - Sovellukseen pystyy myös kirjautua sisään ja ulos.
 
-- Käyttäjä voi hakukentästä hakea valitsemansa raaka-aineen ja nähdä siitä tarkemmat speksit.
+- Käyttäjä voi hakea valitsemansa kuitin kaupan, hinnan, tai kaupan nimen perusteella.
 
-- Sovelluksesta voi hakea raaka-aineita erilaisilla hakusanoilla.
+- Kuittinäkymässä voi lisätä kuittiin tuotteita ja niiden speksejä. 
 
-- Sovelluksessa voi tallentaa reseptejä, mihin tallentuu myös reseptin speksit makroista.
+- Kuittinäkymässä näkyy tarkempia speksejä, kuten heräteostosten osuus euro- ja kalorimääräisesti.
 
-- Reseptit voi jakaa muille käyttäjille, ja sovelluksessa on resepteille arviointi ja kommentointi.
+
+Välipalautus 2:
+
+Sovellus on vielä pahasti kesken, eikä monimutkaisia tietokantahakuja vielä löydy. Kaikki on pintapuolisesti tehtynä, mutta syvyyden lisääminen on seuraava tavoite. 
