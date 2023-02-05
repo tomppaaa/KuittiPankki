@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Etusivu{% endblock %}
+{% block content %}
+Kuittien määrä: {{ receipts[0] }}
+<hr>
+{% for receipts in receipts[1] %}
+{{ receipts.id }}
+<hr>
+{% endfor %}
+<a href="/add_receipt">Lisää kuitti</a>
+{% endblock %}
+
+
+
+

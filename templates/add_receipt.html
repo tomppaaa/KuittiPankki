@@ -1,0 +1,55 @@
+<form action="/add_receipt" method="POST">
+    <fieldset>
+    <h1>Kuitin lisääminen</h1>
+
+    <div>
+    Kauppa:
+        <p>
+        <input type="text" name="shop_name">
+        <p>
+        </div>
+        <div>
+    Kaupan tyyppi:
+        <p>
+        <div>
+        <input type="checkbox" id="Lähikauppa" name="type" checked>
+        <label for="Lähikauppa">Lähikauppa</label>
+        </div>
+      
+        <div>
+        <input type="checkbox" id="Supermarket" name="type">
+        <label for="Supermarket">Supermarket</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="Verkkokauppa" name="type">
+        <label for="Verkkokauppa">Verkkokauppa</label>
+        </div>
+        </p>
+        </div>
+        <div class="form__item">
+        <label for="expirydate" class="form__label">Päivämäärä:</label>
+        <p>
+        <input type="date" class="form__input form__input--small" name="date" id="date" placeholder="Enter an expiration date">
+        <span class="form__error">A sample error message</span>
+        </p>
+        </div>
+
+        {% block content %}
+        <hr>
+        {% for receipts in receipts %}
+        {{ receipts.id }}
+        <hr>
+        {% endfor %}
+        {% endblock %}
+
+    <br>
+        <input type="submit" value="Tallenna kuitti">
+    
+        </form>
+        
+        <p>
+        <a href="/product">Lisää tuote</a>
+        </p>
+        
+    </fieldset>

@@ -1,0 +1,29 @@
+<!doctype html>
+<title>KuittiPankki - {% block title %}{% endblock %}</title>
+<h1>KuittiPankki</h1>
+{% if session.username %}
+<hr>
+{% block content %}{% endblock %}
+<hr>
+{% else %}
+Kirjautumalla sisään pääset omaan kuittipankkiin, josta näät omat tietosi.
+{% endif %}
+{% if session.username %}
+<p>Olet kirjautunut käyttäjällä {{ session.username }}</p>
+<a href="/logout">Kirjaudu ulos</a>
+{% else %}
+<h2>Kirjaudu sisään</h2>
+
+<form action="/login" method="POST">
+Tunnus: <br><input type="text" name="username">
+<p>
+Salasana: <br><input type="password" name="password">
+<p>
+<input type="submit" value="Kirjaudu">
+</form>
+Voit luoda uuden tunnuksen painamalla <a href="/register">tästä</a>
+
+<p>
+<a href="/">Palaa takaisin</a>
+{% endif %}
+
